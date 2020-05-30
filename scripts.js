@@ -15,6 +15,8 @@ $(document).ready(function(){
         //From a selector
         var tipo_sanguineo = $("#tipo-sanguineo").val();
 
+        console.log('armas');
+         
         $.post('https://bilu-back.herokuapp.com/cadastros', {
             nome: nome,
             idade: idade,
@@ -27,9 +29,9 @@ $(document).ready(function(){
         },
 
         function(data, status){
-            console.log("data");
+            console.log("Data: ");
             console.log(data);
-            console.log("status");
+            console.log("Status: ");
             console.log(status);
         });
     });
