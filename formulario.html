@@ -57,18 +57,18 @@
       <div class="custom-control custom-checkbox">
         <input type="checkbox" class="custom-control-input" id="checkarmas">
         <label class="custom-control-label" for="checkarmas">Habilidade com armamento</label>
-      </div>
+      </div><!--Checkbox de armamento-->
 
 
       <div class="custom-control custom-checkbox">
         <input type="checkbox" class="custom-control-input" id="checkveiculo">
         <label class="custom-control-label" for="checkveiculo">Habilidade com veículos de fuga/perseguição</label>
-      </div>
+      </div><!--Checkbox de veículos-->
 
       <div class="custom-control custom-checkbox">
         <input type="checkbox" class="custom-control-input" id="checkcontato">
         <label class="custom-control-label" for="checkcontato">Contato anterior com seres extraterrestres</label>
-      </div>
+      </div><!--Checkbox de contato com alienigenas-->
     
       
       <div class="input-group mb-3 mt-3">
@@ -77,20 +77,25 @@
         </div>
         <select class="custom-select" id="tipo-sanguineo">
           <option selected>Escolha</option>
-          <option value="1">A+</option>
-          <option value="2">A-</option>
-          <option value="3">B+</option>
-          <option value="4">B-</option>
-          <option value="5">AB+</option>
-          <option value="6">AB-</option>
-          <option value="7">O+</option>
-          <option value="8">O-</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
         </select>
-      </div>
+      </div><!--Getter de tipo sanguineo-->
       
-      <input class="btn btn-primary mt-2" type="submit" value="Enviar">
+      <button type="button" class="btn btn-primary" id="botao">
+        Enviar
+      </button><!--Botão enviar-->
     
-      <small id="emailHelp" class="form-text text-muted">Informações criptografadas. Não iremos compartilhá-las com nada e ninguém.</small>
+      <small id="emailHelp" class="form-text text-muted">
+        Informações criptografadas. Não iremos compartilhá-las com nada e ninguém.
+      </small><!--Informação adicional-->
+
     </form>
 
   </body>
