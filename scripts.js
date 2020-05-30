@@ -15,10 +15,22 @@ $(document).ready(function(){
         //From a selector
         var tipo_sanguineo = $("#tipo-sanguineo").val();
 
-        var dia  = data.getDate();           
-        var mes  = data.getMonth();
-        var ano4 = data.getFullYear();
+        $.post('https://bilu-back.herokuapp.com/cadastros', {
+            nome: nome,
+            idade: idade,
+            endereco: endereco,
+            cpf: cpf,
+            armas: armas,
+            dirige: dirige,
+            contato_com_ets: contato_com_ets,
+            tipo_sanguineo: tipo_sanguineo,
+        },
 
-
+        function(data, status){
+            console.log("data");
+            console.log(data);
+            console.log("status");
+            console.log(status);
+        });
     });
 });
