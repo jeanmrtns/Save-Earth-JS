@@ -15,6 +15,8 @@ $(document).ready(function(){
         //From a selector
         var tipo_sanguineo = $("#tipo-sanguineo").val();
          
+
+        //$.post(SERVER-LINK, VARIABLES ATTRIBUTION, SERVER-CALLBACK FUNTION)
         $.post('https://bilu-back.herokuapp.com/cadastros', {
             nome: nome,
             idade: idade,
