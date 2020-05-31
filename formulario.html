@@ -13,81 +13,83 @@
       <title>Formulário de inscrição</title>
     </head>
 
-  <body class="m-2"> 
+  <body class="m-2 bg-dark"> 
 
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="https://www.gov.br/pt-br">
-        <img src="logo.png" width="110" height="110" class="d-inline-block align-top" alt="">
-      </a>
-    </nav>
+    <div class="container bg-white" style="height: 921px;">
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="https://www.gov.br/pt-br">
+          <img src="logo.png" width="110" height="110" class="d-inline-block align-top" alt="">
+        </a>
+      </nav>
 
-    <h3 class="my-3">Formulário de inscrição</h3>
+      <h3 class="my-3" style="text-align: center;">Formulário de inscrição</h3>
 
-    <form>
-      <div class="form-group">
-        <label for="nome">Nome</label>
-        <input type="text" class="form-control" id="input-nome" aria-describedby="emailHelp" placeholder="Informe seu nome completo">
-      </div><!--Input de nome-->
+      <form>
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="input-nome" aria-describedby="emailHelp" placeholder="Informe seu nome completo">
+        </div><!--Input de nome-->
 
-      <div class="form-group">
-        <label for="idade">Idade</label>
-        <input type="number" class="form-control" id="input-idade" placeholder="Sua idade">
-      </div><!--Input de Idade-->
+        <div class="form-group">
+          <label for="idade">Idade</label>
+          <input type="number" class="form-control" id="input-idade" placeholder="Sua idade">
+        </div><!--Input de Idade-->
 
-      <div class="form-group">
-        <label for="endereco">Endereço</label>
-        <input type="text" class="form-control" id="input-endereco" placeholder="Seu endereço">
-      </div><!--Input de Endereço-->
+        <div class="form-group">
+          <label for="endereco">Endereço</label>
+          <input type="text" class="form-control" id="input-endereco" placeholder="Seu endereço">
+        </div><!--Input de Endereço-->
 
-      <div class="form-group">
-        <label for="cpf">CPF</label>
-        <input type="text" class="form-control" id="input-cpf" placeholder="Seu CPF">
-      </div><!--Input de CPF-->
-
-
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="checkarmas">
-        <label class="custom-control-label" for="checkarmas">Habilidade com armamento</label>
-      </div><!--Checkbox de armamento-->
+        <div class="form-group">
+          <label for="cpf">CPF</label>
+          <input type="text" class="form-control" id="input-cpf" placeholder="Seu CPF">
+        </div><!--Input de CPF-->
 
 
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="checkveiculo">
-        <label class="custom-control-label" for="checkveiculo">Habilidade com veículos de fuga/perseguição</label>
-      </div><!--Checkbox de veículos-->
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="checkarmas">
+          <label class="custom-control-label" for="checkarmas">Habilidade com armamento</label>
+        </div><!--Checkbox de armamento-->
 
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="checkcontato">
-        <label class="custom-control-label" for="checkcontato">Contato anterior com seres extraterrestres</label>
-      </div><!--Checkbox de contato com alienigenas-->
-    
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="checkveiculo">
+          <label class="custom-control-label" for="checkveiculo">Habilidade com veículos de fuga/perseguição</label>
+        </div><!--Checkbox de veículos-->
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="checkcontato">
+          <label class="custom-control-label" for="checkcontato">Contato anterior com seres extraterrestres</label>
+        </div><!--Checkbox de contato com alienigenas-->
       
-      <div class="input-group mb-3 mt-3">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">Tipo Sanguíneo</label>
-        </div>
-        <select class="custom-select" id="tipo-sanguineo">
-          <option selected>Escolha</option>
-          <option value="A+">A+</option>
-          <option value="A-">A-</option>
-          <option value="B+">B+</option>
-          <option value="B-">B-</option>
-          <option value="AB+">AB+</option>
-          <option value="AB-">AB-</option>
-          <option value="O+">O+</option>
-          <option value="O-">O-</option>
-        </select>
-      </div><!--Getter de tipo sanguineo-->
+        
+        <div class="input-group mb-3 mt-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Tipo Sanguíneo</label>
+          </div>
+          <select class="custom-select" id="tipo-sanguineo">
+            <option selected>Selecione seu tipo sanguíneo</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+        </div><!--Getter de tipo sanguineo-->
+        
+        <button type="button" class="btn btn-primary" id="botao">
+          Enviar
+        </button><!--Botão enviar-->
       
-      <button type="button" class="btn btn-primary" id="botao">
-        Enviar
-      </button><!--Botão enviar-->
-    
-      <small id="emailHelp" class="form-text text-muted">
-        Informações criptografadas. Não iremos compartilhá-las com nada e ninguém.
-      </small><!--Informação adicional-->
+        <small id="emailHelp" class="form-text text-muted">
+          Informações criptografadas. Não iremos compartilhá-las com nada e ninguém.
+        </small><!--Informação adicional-->
 
-    </form>
+      </form>
 
+    </div><!--container-->
   </body>
 </html>
